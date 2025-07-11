@@ -21,6 +21,7 @@ function PokemonList() {
                         imageUrl: pokemonData.sprites.other.dream_world.front_default
                     }
                 })
+                setAllPokemons(pokemonWithDetails)
                 setLoading(false)
             } catch (error) {
                 console.error("Something went wrong in the pokemon list", error)
@@ -29,8 +30,11 @@ function PokemonList() {
         }
         fetchPokemons();
     }, [])
+
     const filteredPokemons = allPokemons.filter(pokemon => pokemon.name.toLowerCase().includes(searchTerm.toLowerCase())
     );
+    console.log(filteredPokemons)
+    
     const handleSearchChange = (event) => {
         setSearchTerm(event.target.value);
         if(loading){
