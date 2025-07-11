@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-.pokemon-card {
+.pokemon-card { 
      /* height: 350px; */
     width: 200px;
     border: 0.5px solid black;
