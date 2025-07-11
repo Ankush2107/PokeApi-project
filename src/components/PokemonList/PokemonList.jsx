@@ -58,8 +58,11 @@ function PokemonList() {
                     <p>{ele.name}</p>
                 ) )}
                 <p>{pokemon.name.charAt(0).toUpperCase() +  pokemon.name.slice(1)}</p>
-                <p>height: {pokemon.height}</p>
-                <p>weight: {pokemon.weight}</p>
+                <div className="info">
+                    <p>height: {pokemon.height}</p>
+                    <p>weight: {pokemon.weight}</p>
+                </div>
+                
             </Link>
         ))}
       </div>

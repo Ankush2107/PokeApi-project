@@ -1,0 +1,24 @@
+.pokemon-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.pokemon-card {
+     /* height: 350px; */
+    width: 200px;
+    border: 0.5px solid black;
+    text-decoration: none;
+    color: black;
+    
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 20px;
+}
+
+img {
+    height: 70px;
+    width: 70px;
+}
